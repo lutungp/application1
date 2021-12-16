@@ -28,6 +28,9 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              SizedBox(
+                height: 100,
+              ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -58,7 +61,7 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       child: TextFormField(
                         decoration: InputDecoration(
-                          hintText: 'Email',
+                          hintText: 'Email or Phone Number',
                           hintStyle: heading6.copyWith(color: textGrey),
                           border: OutlineInputBorder(
                             borderSide: BorderSide.none,
@@ -99,16 +102,6 @@ class _LoginPageState extends State<LoginPage> {
               SizedBox(
                 height: 32,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  CustomCheckbox(),
-                  SizedBox(
-                    width: 12,
-                  ),
-                  Text('Remember me', style: regular16pt),
-                ],
-              ),
               SizedBox(
                 height: 32,
               ),
@@ -128,11 +121,6 @@ class _LoginPageState extends State<LoginPage> {
               ),
               SizedBox(
                 height: 24,
-              ),
-              CustomPrimaryButton(
-                buttonColor: Color(0xfffbfbfb),
-                textValue: 'Login with Google',
-                textColor: textBlack,
               ),
               SizedBox(
                 height: 50,
